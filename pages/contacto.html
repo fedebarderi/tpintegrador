@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastas Del Tio Pelado</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+<a href="../index.html">Principal</a>
+<a href="../pages/nosotros.html">Nosotros</a>
+<a href="../pages/productos.html">Productos</a>
+<a href=https://api.whatsapp.com/send/?phone=5491162148921>Envíanos un Whatsapp</a>
+</nav>
+ </header>
+ <br>
+    <h1>PASTAS DEL TIO PELADO</h1>
+    <br>
+    <h1>Contacto</h1>
+    <form action="" name="formulario" method="get">
+        <legend>Datos personales</legend>
+        <label>Nombre: </label>
+        <input type="text" name="nombre" maxlength=20 placeholder="Ingrese su nombre">
+        <br>
+        <label for="">Correo: </label>
+        <input type="email" name="email" placeholder="Ingrese su email" required>
+        <br>
+        <label for="">Pasta favorita: </label>
+        <br>
+        <label for="">Espaguetis</label><input type="checkbox" name="pasta" value="Espaguetis">
+        <label for="">Vermicelli</label><input type="checkbox" name="past" value="Vermicelli">
+        <label for="">Fusilli</label><input type="checkbox" name="past" value="Fusilli">
+        <label for="">Raviolis</label><input type="checkbox"  name="past" value="Raviolis">
+        <label for="">Tortellini</label><input type="checkbox" name="past" value="Tortellini">
+        <label for="">Sorrentinos</label><input type="checkbox"  name="past" value="Sorrentinos">
+        <br>
+        
+        <label for="">Fecha de Cumpleaños: </label>
+        <input type="date" name="fecha">
+        <br>
+        <label for="">Asunto: </label>
+        <br>
+        <textarea name="comentario"  cols="30" placeholder="Escriba aqui..." required></textarea>
+        <br>
+        <label for="">Mensaje: </label>
+        <br>
+        <textarea name="comentario"  cols="30" rows="10"  placeholder="Escriba aqui..." required></textarea>
+        <br>
+        <input type="submit">
+        <input type="reset">
+        </form>
+        <br>
+        <img src="../img/Macaroni pasta spaghetti mockup set.jpg" alt="" width="20%">
+        <br>
+        <script>
+            (function(){
+            
+                var formulario = document.getElementsByName('formulario')[0];
+            
+                var validarNombre = function(e){
+                    if (formulario.nombre.value == 0){
+                        alert("Completa el campo nombre");
+                        e.preventDefault();
+                        }
+                        else{
+                            if (formulario.nombre.value.length > 12){
+                                alert("Nombre extenso");
+                                e.preventDefault();
+                                }
+                        }
+            };           
+                var validarCheckbox = function(e){
+                    if (formulario.pasta.checked == false){
+                        alert("Seleciona por lo menos una pasta");
+                        e.preventDefault();
+                }
+            };
+                var validar = function(e){
+                    validarNombre(e);
+                    validarCheckbox(e);
+                };
+                formulario.addEventListener("submit", validar);
+            }())
+            
+            </script>
+<br><hr>
+<footer>@2024 Todos los derechos reservados.</footer>
+</body>
+</html>

@@ -1,0 +1,64 @@
+* {
+  margin: 0px;
+  margin-top: 2px;
+  background-color: burlywood;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+@media screen and (min-width: 1024px) {
+  p {
+    color: brown;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  p {
+    color: gray;
+  }
+}
+@media screen and (max-width: 767px) {
+  p {
+    color: black;
+  }
+}
+
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+#producto {
+  height: 33%;
+  width: 33%;
+}
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 20px;
+  height: 100%;
+}
+img {
+  width: 100%;
+}
+.contacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.contenedor img {
+  width: 100%;
+  margin: 1em;
+  text-align: center;
+}
+.contenedor h2 p {
+  text-align: center;
+}
+form {
+  text-align: center;
+}
