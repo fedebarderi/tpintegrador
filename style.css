@@ -90,7 +90,7 @@ label input:checked + span {
 }
 
 #cb_validation {
-  background: pink;
+  background:red;
   color: darkred;
   padding: 6px 10px;
   margin: 5px 0;
