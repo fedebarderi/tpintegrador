@@ -6,27 +6,36 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-  /* Extra small devices (600px and down) */
-  @media only screen and (max-width: 600px) {
-    *{background-color: rgb(219, 210, 197);
-    }}
-  /* Small devices (600px and up) */
-  @media only screen and (min-width: 600px) {
-    *{background-color: rgb(209, 193, 171);
-    }}
-  /* Medium devices (768px and up) */
-  @media only screen and (min-width: 768px) {
-    *{background-color: burlywood;
-    }}
-  /* Large devices (992px and up) */
-  @media only screen and (min-width: 992px) {
-    *{background-color: rgb(219, 157, 75);
-    }}
-  /* Extra large devices (1200px and up) */
-  @media only screen and (min-width: 1200px) {
-    *{background-color: rgb(218, 123, 0);
-    }}
-
+/* Extra small devices (600px and down) */
+@media only screen and (max-width: 600px) {
+  * {
+    background-color: rgb(219, 210, 197);
+  }
+}
+/* Small devices (600px and up) */
+@media only screen and (min-width: 600px) {
+  * {
+    background-color: rgb(209, 193, 171);
+  }
+}
+/* Medium devices (768px and up) */
+@media only screen and (min-width: 768px) {
+  * {
+    background-color: burlywood;
+  }
+}
+/* Large devices (992px and up) */
+@media only screen and (min-width: 992px) {
+  * {
+    background-color: rgb(219, 157, 75);
+  }
+}
+/* Extra large devices (1200px and up) */
+@media only screen and (min-width: 1200px) {
+  * {
+    background-color: rgb(218, 123, 0);
+  }
+}
 
 h1 {
   text-align: center;
@@ -68,4 +77,22 @@ img {
 }
 form {
   text-align: center;
+}
+
+label span {
+  color: grey;
+}
+label input:checked + span {
+  color: black;
+}
+#cb_validation:empty {
+  display: none;
+}
+
+#cb_validation {
+  background: pink;
+  color: darkred;
+  padding: 6px 10px;
+  margin: 5px 0;
+  display: block;
 }
