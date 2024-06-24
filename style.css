@@ -5,21 +5,28 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-@media screen and (min-width: 1024px) {
-  p {
-    color: brown;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  p {
-    color: gray;
-  }
-}
-@media screen and (max-width: 767px) {
-  p {
-    color: black;
-  }
-}
+
+  /* Extra small devices (600px and down) */
+  @media only screen and (max-width: 600px) {
+    *{background-color: rgb(219, 210, 197);
+    }}
+  /* Small devices (600px and up) */
+  @media only screen and (min-width: 600px) {
+    *{background-color: rgb(209, 193, 171);
+    }}
+  /* Medium devices (768px and up) */
+  @media only screen and (min-width: 768px) {
+    *{background-color: burlywood);
+    }}
+  /* Large devices (992px and up) */
+  @media only screen and (min-width: 992px) {
+    *{background-color: rgb(219, 157, 75);
+    }}
+  /* Extra large devices (1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    *{background-color: rgb(218, 123, 0);
+    }}
+
 
 h1 {
   text-align: center;
