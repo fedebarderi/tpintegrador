@@ -16,7 +16,7 @@
     }}
   /* Medium devices (768px and up) */
   @media only screen and (min-width: 768px) {
-    *{background-color: burlywood);
+    *{background-color: burlywood;
     }}
   /* Large devices (992px and up) */
   @media only screen and (min-width: 992px) {
